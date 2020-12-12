@@ -1,0 +1,24 @@
+h3{
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.list{
+}
+table.list{
+
+    width: 1150px;
+    background-color: #FFFFFF;
+
+}
+table.list tr{
+
+    border: 1.3rem solid #3B3B3C;
+    height: 230px;
+    cursor: pointer;
+}
+table.list td{
+
+    border: 1px solid darkred;
+    height: 230px;
+    cursor: pointer;
+}
