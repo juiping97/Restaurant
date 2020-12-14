@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Profile extends Model
 {
@@ -17,7 +18,8 @@ class Profile extends Model
     public function profileImage(){
 
         $imagePath = ($this->image) ? $this->image : 'profile/G4wxjVO1ohyRXa0cjzF1nVqch9Ho13kBm758OW5X.jpg';
-        return '/storage/' . $imagePath;
+        return Storage::disk('s3')->response($imagePath);
+        #return '/storage' . $imagePath;
     }
 
     public function followers(){

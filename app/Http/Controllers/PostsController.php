@@ -62,7 +62,7 @@ class PostsController extends Controller
 
         auth()->user()->posts()->create([
             'caption' => $data['caption'],
-            'image' => Storage::disk('s3')->url($imagePath)
+            'image' => $imagePath
         ]);
 
         return redirect('/profile/'.auth()->user()->id);
