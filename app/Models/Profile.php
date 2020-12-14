@@ -17,8 +17,8 @@ class Profile extends Model
     public function profileImage(){
 
         $imagePath = ($this->image) ? $this->image : 'profile/G4wxjVO1ohyRXa0cjzF1nVqch9Ho13kBm758OW5X.jpg';
-        #return $imagePath;
-        return Storage::disk('s3')->response($imagePath);
+        return $imagePath;
+        #return Storage::disk('s3')->response($imagePath);
     }
 
     public function followers(){
