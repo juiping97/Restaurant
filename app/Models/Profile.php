@@ -17,8 +17,7 @@ class Profile extends Model
     public function profileImage(){
 
         $imagePath = ($this->image) ? $this->image : 'profile/G4wxjVO1ohyRXa0cjzF1nVqch9Ho13kBm758OW5X.jpg';
-        return 'https://restaurantbucket.s3.amazonaws.com/' . $imagePath;
-        #return '/storage/' . $imagePath;
+        return '/storage/' . $imagePath;
     }
 
     public function followers(){

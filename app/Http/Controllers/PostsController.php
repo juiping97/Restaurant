@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\Profile;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 
 class PostsController extends Controller
@@ -28,6 +29,7 @@ class PostsController extends Controller
         return view('posts.create');  //views
     }
 
+    /*
     public function store()
     {
         $data = request()->validate([
@@ -46,6 +48,26 @@ class PostsController extends Controller
 
         return redirect('/profile/'.auth()->user()->id);
     }
+    */
+
+    public function store(Request $request)
+    {
+        $data = $request->validate([
+            'caption' => 'required',
+            'image' => ['required','image'],
+        ]);
+
+        $imagePath=$request->file('image')->store('uploads','s3');
+
+
+        auth()->user()->posts()->create([
+            'caption' => $data['caption'],
+            'image' => Storage::disk('s3')->url($imagePath)
+        ]);
+
+        return redirect('/profile/'.auth()->user()->id);
+    }
+
 
     public function show(\App\Models\Post $post)
     {
