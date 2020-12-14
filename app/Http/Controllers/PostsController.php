@@ -65,8 +65,7 @@ class PostsController extends Controller
             'image' => $imagePath
         ]);
 
-        #return redirect('/profile/'.auth()->user()->id);
-        return Storage::disk('s3')->response($imagePath);
+        return redirect('/profile/'.auth()->user()->id);
     }
 
 
