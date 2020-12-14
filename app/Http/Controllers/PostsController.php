@@ -35,7 +35,7 @@ class PostsController extends Controller
             'image' => ['required','image'],
         ]);
 
-        $imagePath=request('image')->store('uploads','public'); //照片存在storage->app>public->uploads
+        $imagePath=request('image')->store('uploads','s3'); //照片存在storage->app>public->uploads
 
         $image = Image::make(public_path("storage/{$imagePath}"))->fit(1200,1200);
         $image->save();
