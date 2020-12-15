@@ -34,6 +34,7 @@
                 </div>
             </div>
         </div>
-        <a href="/profile/{{$post->user->id}}" class="btn btn-primary align-content-md-center" >Back To Profile</a>
+        <hr style="border-top: 1px solid white">
+        <a href="/profile/{{$post->user->id}}" class="btn btn-primary align-content-md-center pt-3" >Back To Profile</a>
     </div>
 @endsection
