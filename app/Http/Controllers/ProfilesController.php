@@ -39,14 +39,13 @@ class ProfilesController extends Controller
 
         if(request('image')){
 
-            $imagePath=request('image')->store('profile','public'); //照片存在storage->app>public->uploads
-            $image = Image::make(public_path("storage/{$imagePath}"))->fit(1000,1000);
-            $image->save();
+            #$imagePath=request('image')->store('profile','public'); //照片存在storage->app>public->uploads
+            #$image = Image::make(public_path("storage/{$imagePath}"))->fit(1000,1000);
+            #$image->save();
+            $imagePath=request('image')->store('profile','s3'); //照片存在storage->app>public->uploads
 
             $imageArray = ['image' => $imagePath];
         }
-
-        //$imagePath=request('image')->store('profile','s3'); //照片存在storage->app>public->uploads
 
         auth()->user()->profile->update(array_merge(
             $data,
