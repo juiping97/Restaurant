@@ -39,6 +39,7 @@
             @foreach($user->posts as $post)
                 <div class="col-4 pb-4">
                     <img src="{{Storage::disk('s3')->url($post->image)}}" class="w-100 h-100">
+                    <h4>{{$post->caption}}</h4>
                 </div>
             @endforeach
 
