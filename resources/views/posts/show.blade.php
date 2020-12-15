@@ -31,7 +31,9 @@
                             </a>
                         </span> {{$post->caption}}
                     </p>
+                </div>
             </div>
         </div>
+        <a href="/profile/{{$post->user->id}}" class="btn btn-primary align-content-md-center" >Back To Profile</a>
     </div>
 @endsection
