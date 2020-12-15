@@ -38,7 +38,7 @@
         <div class="row pt-5">
             @foreach($user->posts as $post)
                 <div class="col-4 pb-4">
-                    <img src="{{Storage::disk('s3')->url($post->image)}}" width=1200 height="1200" class="w-100">
+                    <img src="{{Storage::disk('s3')->url($post->image)}}" class="w-100 h-100">
                 </div>
             @endforeach
 
