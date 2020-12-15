@@ -44,6 +44,8 @@ class ProfilesController extends Controller
             $image->save();
 
             $imageArray = ['image' => $imagePath];
+
+
         }
 
         auth()->user()->profile->update(array_merge(
