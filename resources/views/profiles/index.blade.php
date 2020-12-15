@@ -38,11 +38,11 @@
         <div class="row pt-5">
             @foreach($user->posts as $post)
                 <div class="col-4 pb-4">
-                    <img src="{{Storage::disk('s3')->url($post->image)}}" class="w-100 h-100">
-                    <h4>{{$post->caption}}</h4>
+                    <a href="/p/{{ $post->id }}">
+                        <img src="{{Storage::disk('s3')->url($post->image)}}" class="w-100 h-100">
+                    </a>
                 </div>
             @endforeach
-
         </div>
     </div>
 
