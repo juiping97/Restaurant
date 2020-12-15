@@ -60,7 +60,7 @@ class PostsController extends Controller
         $imagePath=$request->file('image');
         $image = Image::make($imagePath)->fit(1200,1200);
         Storage::put("uploads/{$imagePath}", $image->stream());
-        $imagePath="/uploads/"+$imagePath;
+        $imagePath="/uploads/{$imagePath}";
 
         /*
         $imagePath=$request->file('image')->store('uploads','s3');
