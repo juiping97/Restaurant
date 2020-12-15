@@ -5,9 +5,13 @@
         <div class="row pt-5">
             @foreach($posts as $post)
                 <div class="col-4 pb-4">
-                    <img src="{{Storage::disk('s3')->url($post->user->profile->profileImage())}}" class="rounded-circle w-25">
                     <a href="/profile/{{$post->user->id}}">
-                        <span class="text-white" style="font-size: larger">{{$post->user->profile->restaurantName}}</span></a>
+                    <img src="{{Storage::disk('s3')->url($post->user->profile->profileImage())}}" class="rounded-circle w-25">
+                    </a>
+
+                    <a href="/profile/{{$post->user->id}}">
+                        <span class="text-white" style="font-size: larger">{{$post->user->profile->restaurant_name}}</span>
+                    </a>
                 </div>
             @endforeach
         </div>

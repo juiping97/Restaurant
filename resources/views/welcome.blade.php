@@ -11,7 +11,7 @@
         <div class="left">
         </div>
     </div>
-    <a href="{{url('')}}"
+    <a href="/explore"
        class="btn btn-warning"
        style="position: absolute;top: 60%; left: 15%; width: 20%;
        border-radius:12px;font-size:26px;
