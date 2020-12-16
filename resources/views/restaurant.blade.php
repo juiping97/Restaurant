@@ -1,20 +1,24 @@
 @extends('layouts.app')
 @section('content')
     <table class="content-table" style="font-family: 'Fredoka One', cursive">
-        <tr>
-            <td>Restuarant Name</td>
-            <td>Restuarant Country</td>
-            <td>Restuarant Address</td>
-            <td>Open Time</td>
-        </tr>
-        @foreach($profiles as $profile)
-        <tr>
-            <td>{{$profile['restaurant_name']}}</td>
-            <td>{{$profile['restaurant_country']}}</td>
-            <td>{{$profile['restaurant_address']}}</td>
-            <td>{{$profile['open_time']}}</td>
-        </tr>
-        @endforeach
+        <thread>
+            <tr>
+                <td>Restuarant Name</td>
+                <td>Restuarant Country</td>
+                <td>Restuarant Address</td>
+                <td>Open Time</td>
+            </tr>
+        </thread>
+        <tbody>
+            @foreach($profiles as $profile)
+                <tr>
+                    <td>{{$profile['restaurant_name']}}</td>
+                    <td>{{$profile['restaurant_country']}}</td>
+                    <td>{{$profile['restaurant_address']}}</td>
+                    <td>{{$profile['open_time']}}</td>
+                </tr>
+            @endforeach
+        </tbody>
     </table>
 
     <style>
@@ -56,8 +60,5 @@
             font-weight: bold;
             color: #009879;
         }
-
-
-
     </style>
 @endsection
