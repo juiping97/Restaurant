@@ -66,4 +66,8 @@ class ProfilesController extends Controller
         return view('taiwan',['profiles' => $data]);
     }
 
+    public function test(){
+        return view('frontend.index');
+    }
+
 }

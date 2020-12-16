@@ -42,3 +42,5 @@ Route::get('/taiwan',[App\Http\Controllers\ProfilesController::class,'taiwan']);
 Route::get('/explore',function(){
     return view('explore');
 });
+
+Route::get('/test',[App\Http\Controllers\ProfilesController::class,'test']);

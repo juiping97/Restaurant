@@ -11,21 +11,17 @@
     <link href="css/frontend.css" rel="stylesheet" >
 </head>
 <body>
-    @include('layouts.inc.navbar')
+@include('layouts.inc.navbar')
 
 
-    <div class="container">
-            <div class="panel">
-                <div class="list">
-                    <br>
-                    <h3>Restaurant list</h3>
-                    @yield('content')
-
-
-                </div>
-            </div>
-
+<div class="container">
+    <div class="panel">
+        <div class="list">
+            <br>
+            @yield('content')
         </div>
+    </div>
+</div>
 
 
 <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
