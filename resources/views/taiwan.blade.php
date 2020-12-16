@@ -6,7 +6,7 @@
         <div class="col-md-12" id="col_list">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm bg-white  position-relative" >
                 <div class="col-auto d-none d-lg-block" >
-                    <img src="/img/restaurant_example.jpg" alt="rest_img" width="200" height="250">
+                    <img src="/img/homepage.png" alt="rest_img" width="200" height="250">
                 </div>
                 <div class="col p-4 d-flex flex-column position-static">
                     <strong class="d-inline-block mb-2 text-primary">{{$profile['restaurant_name']}}</strong>
