@@ -14,17 +14,15 @@
                     <img src="/img/homepage.png" alt="rest_img" width="200" height="250">
                 </div>
                 <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-primary">{{$profile['restaurant_name']}}</strong>
+                    <strong class="d-inline-block mb-2 text-primary"><a href="/profile/{{$profile['user_id']}}">{{$profile['restaurant_name']}}</a></strong>
                     <!--<div class="mb-1 text-muted">Star Rate</div>-->
+                    <p class="card-text mb-auto">Country：<strong>{{$profile['restaurant_country']}}</strong></p>
                     <p class="card-text mb-auto">Address：<strong>{{$profile['restaurant_address']}}</strong></p>
                     <p class="card-text mb-auto">Phone：<strong>{{$profile['restaurant_phone']}}</strong></p>
                     <p class="card-text mb-auto">Open Time：<strong>{{$profile['open_time']}}</strong></p>
                     <p class="card-text mb-auto">Url：
                         <strong><a href="{{$profile['restaurant_url']}}">{{$profile['restaurant_url']}}</a></strong>
                     </p>
-                    <a href="/profile/{{$profile['user_id']}}" class="mb-auto stretched-link">Restaurant Country:
-                        <strong>{{$profile['restaurant_country']}}</strong>
-                    </a>
                 </div>
             </div>
         </div>
