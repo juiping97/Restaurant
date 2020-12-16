@@ -10,7 +10,7 @@
         </tr>
         @foreach($profiles as $profile)
             <tr>
-                <a href="/profile/{{$profile['user_id']}}"><td>{{$profile['restaurant_name']}}</td></a>
+                <td><a href="/profile/{{$profile['user_id']}}">{{$profile['restaurant_name']}}</a></td>
                 <td>{{$profile['restaurant_country']}}</td>
                 <td>{{$profile['restaurant_address']}}</td>
                 <td>{{$profile['open_time']}}</td>
