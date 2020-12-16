@@ -10,7 +10,7 @@
         </tr>
         @foreach($profiles as $profile)
             <tr>
-                <td>{{$profile['restaurant_name']}}</td>
+                <a href="/profile/{{$profile['user_id']}}"><td>{{$profile['restaurant_name']}}</td></a>
                 <td>{{$profile['restaurant_country']}}</td>
                 <td>{{$profile['restaurant_address']}}</td>
                 <td>{{$profile['open_time']}}</td>
@@ -22,10 +22,10 @@
 
 <style>
     table {
-        width:100%;
+        width:90%;
     }
     table, th, td {
-        border: 1px solid black;
+        border: 2px solid black;
         border-collapse: collapse;
     }
     th, td {
@@ -39,7 +39,7 @@
         background-color: #fff;
     }
     #t01 th {
-        background-color: green;
+        background-color: #FFC55F;
         color: white;
     }
 </style>
