@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <body>
-    <table id="t01">
+    <table id="t01" class="center">
         <tr>
             <th>Restuarant Name</th>
             <th>Restuarant Country</th>
@@ -21,7 +21,12 @@
 @endsection
 
 <style>
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
     table {
+        max-width: 100%;
         width:90%;
     }
     table, th, td {
