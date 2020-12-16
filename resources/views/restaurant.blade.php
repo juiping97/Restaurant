@@ -1,7 +1,5 @@
 <!doctype html>
 <html>
-@extends('layouts.app')
-@section('content')
     <style>
         table {
             width:100%;
@@ -44,5 +42,4 @@
         @endforeach
     </table>
     </body>
-@endsection
 </html>
