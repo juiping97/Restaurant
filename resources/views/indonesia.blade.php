@@ -2,7 +2,7 @@
 @section('content')
     <div class="col-12 pt-3 pl-5">
         <div class="d-flex justify-content-between align-items-baseline">
-            <strong><h1 style="color: white;font-family: 'Fredoka One', cursive">Restaurant in Taiwan</h1></strong>
+            <strong><h1 style="color: white;font-family: 'Fredoka One', cursive">Restaurant in Indonesia</h1></strong>
             <a href="/welcome" class="btn btn-warning" style="font-family: 'Fredoka One', cursive;">Back</a>
         </div>
     </div>
@@ -15,16 +15,9 @@
                 </div>
                 <div class="col p-4 d-flex flex-column position-static">
                     <strong class="d-inline-block mb-2 text-primary">{{$profile['restaurant_name']}}</strong>
-                    <!--<div class="mb-1 text-muted">Star Rate</div>-->
-                    <p class="card-text mb-auto">Address：<strong>{{$profile['restaurant_address']}}</strong></p>
-                    <p class="card-text mb-auto">Phone：<strong>{{$profile['restaurant_phone']}}</strong></p>
-                    <p class="card-text mb-auto">Open Time：<strong>{{$profile['open_time']}}</strong></p>
-                    <p class="card-text mb-auto">Url：
-                        <strong><a href="{{$profile['restaurant_url']}}">{{$profile['restaurant_url']}}</a></strong>
-                    </p>
-                    <a href="/profile/{{$profile['user_id']}}" class="mb-auto stretched-link">Restaurant Country:
-                        <strong>{{$profile['restaurant_country']}}</strong>
-                    </a>
+                    <div class="mb-1 text-muted">Star Rate</div>
+                    <p class="card-text mb-auto">{{$profile['open_time']}}</p>
+                    <a href="/profile/{{$profile['user_id']}}" class="mb-auto stretched-link">{{$profile['restaurant_country']}}</a>
                 </div>
             </div>
         </div>

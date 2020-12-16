@@ -38,9 +38,8 @@ Route::patch('/profile/{user}',[App\Http\Controllers\ProfilesController::class, 
 Route::delete('/profile/{user}',[App\Http\Controllers\ProfilesController::class, 'destroy'])->name('profile.destroy');
 
 Route::get('/taiwan',[App\Http\Controllers\ProfilesController::class,'taiwan']);
+Route::get('/indonesia',[App\Http\Controllers\ProfilesController::class,'indonesia']);
 
 Route::get('/explore',function(){
     return view('explore');
 });
-
-Route::get('/test',[App\Http\Controllers\ProfilesController::class,'test']);
