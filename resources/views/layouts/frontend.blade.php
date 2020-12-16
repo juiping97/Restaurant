@@ -1,4 +1,3 @@
-@extends('layouts.app')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,7 @@
     <link href="css/frontend.css" rel="stylesheet" >
 </head>
 <body>
-
+@include('layouts.app')
 <div class="container">
     <div class="panel">
         <div class="list">
@@ -21,6 +20,8 @@
         </div>
     </div>
 </div>
+
+
 <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('frontend/js/jquery-3.5.1.js')}}"></script>
 <script src="{{asset('frontend/js/popper.min.js')}}"></script>
