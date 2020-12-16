@@ -1,30 +1,6 @@
-<!doctype html>
-<html>
-    <style>
-        table {
-            width:100%;
-        }
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 15px;
-            text-align: left;
-        }
-        #t01 tr:nth-child(even) {
-            background-color: #eee;
-        }
-        #t01 tr:nth-child(odd) {
-            background-color: #fff;
-        }
-        #t01 th {
-            background-color: green;
-            color: white;
-        }
-    </style>
+@extends('layouts.app')
+@section('content')
     <body>
-
     <table id="t01">
         <tr>
             <th>Restuarant Name</th>
@@ -42,4 +18,28 @@
         @endforeach
     </table>
     </body>
-</html>
+@endsection
+
+<style>
+    table {
+        width:100%;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+    #t01 tr:nth-child(even) {
+        background-color: #eee;
+    }
+    #t01 tr:nth-child(odd) {
+        background-color: #fff;
+    }
+    #t01 th {
+        background-color: green;
+        color: white;
+    }
+</style>

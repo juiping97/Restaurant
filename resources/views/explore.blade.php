@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="rectangle ">
+    <div class="rectangle">
         <div class="row">
             <a href="#"><div id="DIV1" style=" background-image: url('{{asset('img/tai.jpg')}}');"></div></a>
             <a href="#"><div id="DIV1" style=" background-image: url('{{asset('img/indonesia.jpg')}}');"></div></a>
@@ -14,12 +14,10 @@
             <div style="clear:both;"></div>
         </div>
     </div>
-
-
 @endsection
 
 <style>
-    .rectangle {
+    .rectangle{
         overflow: auto;
         margin: auto;
         height: 600px;
