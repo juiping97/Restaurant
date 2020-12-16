@@ -8,7 +8,7 @@
     </div>
     @foreach($profiles as $profile)
     <div class="row mb-1" id="list_part">
-        <div class="col-md-12" id="col_list">
+        <div class="col-md-9" id="col_list">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm bg-white  position-relative" >
                 <div class="col-auto d-none d-lg-block" >
                     <img src="/img/homepage.png" alt="rest_img" width="200" height="250">
