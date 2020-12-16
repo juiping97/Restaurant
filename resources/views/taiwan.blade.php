@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <h3>Restaurant list</h3>
+    <h3 style="color: white;font-family: 'Fredoka One', cursive">Restaurant list</h3>
     @foreach($profiles as $profile)
     <div class="row mb-1" id="list_part">
         <div class="col-md-12" id="col_list">
