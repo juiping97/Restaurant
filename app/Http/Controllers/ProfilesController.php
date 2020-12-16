@@ -62,8 +62,9 @@ class ProfilesController extends Controller
     }
 
     public function taiwan(){
-        $data = Profile::all();
+        $data = Profile::where('restaurant_country','=','Taiwan')->get()->piginate(10);
         return view('taiwan',['profiles' => $data]);
+
     }
 
     public function indoessia(){
