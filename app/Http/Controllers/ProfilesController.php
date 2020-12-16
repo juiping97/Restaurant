@@ -61,4 +61,9 @@ class ProfilesController extends Controller
         return view('welcome');
     }
 
+    public function taiwan(){
+        $data = Profile::all();
+        return view('list',['profiles' => $data]);
+    }
+
 }

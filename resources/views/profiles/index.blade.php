@@ -22,7 +22,7 @@
 
                 <div class="d-flex">
                     <div class="pr-5">Post：<strong>{{$user->posts->count()}}</strong></div>
-                    <div class="pr-5">Followers：<strong>{{$user->profile->followers->count()}}</strong></div>
+                    <div class="pr-5">Like：<strong>{{$user->profile->followers->count()}}</strong></div>
                     <div class="pr-5">Star：<strong>5.5</strong></div>
                 </div>
 

@@ -149,11 +149,13 @@
               method="POST"
               style="position:relative; left: 40%">
             @csrf
+
             @method('delete')
             <button id="submit"
                     name="submit"
                     class="btn btn-primary"
-                    style="font-family: 'Fredoka One', cursive; color: white;">DELETE ACCOUNT</button>
+                    style="font-family: 'Fredoka One', cursive; color: white;">DELETE ACCOUNT
+            </button>
         </form>
     </div>
 

@@ -1,37 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie-edge">
-    <title>
-        @yield('title')|Restaurant list
-    </title>
-    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
-    <link href="css/frontend.css" rel="stylesheet" >
-</head>
-<body>
-@include('layouts.app')
-
-
-<div class="container">
-    <div class="panel">
-        <div class="list">
-            <br>
-            <h3>Restaurant list</h3>
-            @yield('content')
-
-
-        </div>
-    </div>
-
-</div>
-
-
-<script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('frontend/js/jquery-3.5.1.js')}}"></script>
-<script src="{{asset('frontend/js/popper.min.js')}}"></script>
-@yield('script')
-
-</body>
-</html>
+@extends('layouts.app')
+@section('content')
+    <table border="1">
+        <tr>
+            <td>Restuarant Name</td>
+            <td>Restuarant Country</td>
+            <td>Restuarant Address</td>
+            <td>Open Time</td>
+        </tr>
+        <tr>
+            @foreach($profiles as $profile)
+                <td>{{$profile['restaurant_name']}}</td>
+                <td>{{$profile['restaurant_country']}}</td>
+                <td>{{$profile['restaurant_address']}}</td>
+                <td>{{$profile['open_time']}}</td>
+            @endforeach
+        </tr>
+    </table>
+@endsection
