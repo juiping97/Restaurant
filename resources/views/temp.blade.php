@@ -6,7 +6,6 @@
             <strong><h1 style="color: white;font-family: 'Fredoka One', cursive">Restaurant in Taiwan</h1></strong>
             <a href="/welcome" class="btn btn-warning" style="font-family: 'Fredoka One', cursive;">Back</a>
         </div>
-
     </div>
     <table id="t01" class="center pt-5">
         <tr>

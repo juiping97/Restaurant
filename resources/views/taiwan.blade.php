@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('content')
-    <h3 style="color: white;font-family: 'Fredoka One', cursive">Restaurant list</h3>
+    <div class="col-12 pt-3 pl-5">
+        <div class="d-flex justify-content-between align-items-baseline">
+            <strong><h1 style="color: white;font-family: 'Fredoka One', cursive">Restaurant in Taiwan</h1></strong>
+            <a href="/welcome" class="btn btn-warning" style="font-family: 'Fredoka One', cursive;">Back</a>
+        </div>
+    </div>
     @foreach($profiles as $profile)
     <div class="row mb-1" id="list_part">
         <div class="col-md-12" id="col_list">
