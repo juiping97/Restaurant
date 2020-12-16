@@ -2,7 +2,7 @@
 @section('content')
     <div class="rectangle">
         <div class="row">
-            <a href="#"><div id="DIV1" style=" background-image: url('{{asset('img/tai.jpg')}}');"></div></a>
+            <a href="/taiwan"><div id="DIV1" style=" background-image: url('{{asset('img/tai.jpg')}}');"></div></a>
             <a href="#"><div id="DIV1" style=" background-image: url('{{asset('img/indonesia.jpg')}}');"></div></a>
             <div id="DIV1"></div>
             <div style="clear:both;"></div>

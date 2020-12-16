@@ -37,7 +37,7 @@ Route::get('/profile/{user}/edit',[App\Http\Controllers\ProfilesController::clas
 Route::patch('/profile/{user}',[App\Http\Controllers\ProfilesController::class, 'update'])->name('profile.update');
 Route::delete('/profile/{user}',[App\Http\Controllers\ProfilesController::class, 'destroy'])->name('profile.destroy');
 
-Route::get('/front',[App\Http\Controllers\ProfilesController::class,'taiwan']);
+Route::get('/taiwan',[App\Http\Controllers\ProfilesController::class,'taiwan']);
 
 Route::get('/explore',function(){
     return view('explore');

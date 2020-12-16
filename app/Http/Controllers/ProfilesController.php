@@ -63,7 +63,7 @@ class ProfilesController extends Controller
 
     public function taiwan(){
         $data = Profile::all();
-        return view('restaurant',['profiles' => $data]);
+        return view('taiwan',['profiles' => $data]);
     }
 
 }

@@ -1,7 +1,14 @@
 @extends('layouts.app')
 @section('content')
     <body>
-    <table id="t01" class="center">
+    <div class="col-12 pt-3 pl-5">
+            <div class="d-flex justify-content-between align-items-baseline">
+                <strong><h1 style="color: white;font-family: 'Fredoka One', cursive">Restaurant in Taiwan</h1></strong>
+                <a href="/welcome" class="btn btn-warning" style="font-family: 'Fredoka One', cursive;">Back</a>
+            </div>
+
+    </div>
+    <table id="t01" class="center pt-5">
         <tr>
             <th>Restuarant Name</th>
             <th>Restuarant Country</th>
