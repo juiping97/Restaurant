@@ -1,57 +1,38 @@
 @extends('layouts.app')
 @section('content')
-    <body>
-    <div class="col-12 pt-3 pl-5">
-            <div class="d-flex justify-content-between align-items-baseline">
-                <strong><h1 style="color: white;font-family: 'Fredoka One', cursive">Restaurant in Taiwan</h1></strong>
-                <a href="/welcome" class="btn btn-warning" style="font-family: 'Fredoka One', cursive;">Back</a>
+    <h3>Restaurant list</h3>
+    <div class="row mb-1" id="list_part">
+        <div class="col-md-12" id="col_list">
+
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm bg-white  position-relative" >
+                <div class="col-auto d-none d-lg-block" >
+                    <img src="/img/restaurant_example.jpg" alt="rest_img" width="200" height="250">
+                </div>
+
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Crarapybara</strong>
+                    <div class="mb-1 text-muted">Star Rate</div>
+                    <p class="card-text mb-auto">This is restaurant information .</p>
+                    <a href="#" class="mb-auto stretched-link">URL</a>
+                </div>
+
             </div>
+        </div>
+        <div class="col-md-12" id="col_list">
 
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm bg-white  position-relative" >
+                <div class="col-auto d-none d-lg-block" >
+                    <img src="/img/restaurant_example.jpg" alt="rest_img" width="200" height="250">
+                </div>
+
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Crarapybara</strong>
+                    <div class="mb-1 text-muted">Star Rate</div>
+                    <p class="card-text mb-auto">This is restaurant information .</p>
+                    <a href="#" class="mb-auto stretched-link">URL</a>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <table id="t01" class="center pt-5">
-        <tr>
-            <th>Restuarant Name</th>
-            <th>Restuarant Country</th>
-            <th>Restuarant Address</th>
-            <th>Open Time</th>
-        </tr>
-        @foreach($profiles as $profile)
-            <tr>
-                <td><a href="/profile/{{$profile['user_id']}}">{{$profile['restaurant_name']}}</a></td>
-                <td>{{$profile['restaurant_country']}}</td>
-                <td>{{$profile['restaurant_address']}}</td>
-                <td>{{$profile['open_time']}}</td>
-            </tr>
-        @endforeach
-    </table>
-    </body>
 @endsection
-
-<style>
-    .center {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    table {
-        max-width: 100%;
-        width:90%;
-    }
-    table, th, td {
-        border: 2px solid black;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: 15px;
-        text-align: left;
-    }
-    #t01 tr:nth-child(even) {
-        background-color: #eee;
-    }
-    #t01 tr:nth-child(odd) {
-        background-color: #fff;
-    }
-    #t01 th {
-        background-color: #FFC55F;
-        color: white;
-    }
-</style>
