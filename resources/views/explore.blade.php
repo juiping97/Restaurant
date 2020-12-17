@@ -4,7 +4,7 @@
     <div class="bg">
         <img src="/img/explore.png">
     </div>
-    <div class="rectangle">
+    <div class="rectangle" style="position: absolute;top:10%;left:15%">
         <div class="row">
             <a href="/taiwan"><div id="DIV1" style=" background-image: url('{{asset('img/tai.jpg')}}');"></div></a>
             <a href="/indonesia"><div id="DIV1" style=" background-image: url('{{asset('img/indonesia.jpg')}}');"></div></a>
@@ -26,8 +26,6 @@
 
 <style>
     .rectangle{
-        margin-left: auto;
-        margin-right: auto;
         height: 600px;
         width: 1000px;
         background-color: #FDC53A;
