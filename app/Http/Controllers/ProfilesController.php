@@ -57,19 +57,18 @@ class ProfilesController extends Controller
     }
     public function destroy(User $user){
 
-        $user->delete();
+        $user->profile()->delete();
         return view('welcome');
     }
 
     public function taiwan(){
         $data = Profile::where('restaurant_country','=','Taiwan')->latest()->paginate(10);
         return view('taiwan',['profiles' => $data]);
-
     }
 
-    public function indoessia(){
-        $data = Profile::all();
-        return view('taiwan',['profiles' => $data]);
+    public function indonesia(){
+        $data = Profile::where('restaurant_country','=','Indonesia')->latest()->paginate(10);
+        return view('indonesia',['profiles' => $data]);
     }
 
 }
