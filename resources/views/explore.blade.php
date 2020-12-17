@@ -3,7 +3,7 @@
     <div class="rectangle">
         <div class="row">
             <a href="/taiwan"><div id="DIV1" style=" background-image: url('{{asset('img/tai.jpg')}}');"></div></a>
-            <a href="#"><div id="DIV1" style=" background-image: url('{{asset('img/indonesia.jpg')}}');"></div></a>
+            <a href="/indonesia"><div id="DIV1" style=" background-image: url('{{asset('img/indonesia.jpg')}}');"></div></a>
             <div id="DIV1"></div>
             <div style="clear:both;"></div>
         </div>
@@ -14,12 +14,18 @@
             <div style="clear:both;"></div>
         </div>
     </div>
+    <div class="col-12" style="position: absolute;top:95%;color: white">
+        <strong><h1 align="center"><p style="font-size: medium">&copy; 2020 NCU SE-Project Group 11<p></h1></strong><p></p>
+    </div>
 @endsection
 
 <style>
     .rectangle{
         overflow: auto;
-        margin: auto;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom: auto;
         height: 600px;
         width: 1000px;
         background-color: #FDC53A;
