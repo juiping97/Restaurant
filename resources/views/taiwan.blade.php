@@ -16,7 +16,7 @@
                     <img src="/img/taiwan_flag.png" alt="" width="270" height="200">
                 </div>
                 <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-primary"><a href="/profile/{{$profile['user_id']}}">{{$profile['restaurant_name']}}</a></strong>
+                    <strong class="d-inline-block mb-2 text-primary" style="font-size: 25px"><a href="/profile/{{$profile['user_id']}}">{{$profile['restaurant_name']}}</a></strong>
                     <!--<div class="mb-1 text-muted">Star Rate</div>-->
                     <p class="card-text mb-auto">Country：<strong>{{$profile['restaurant_country']}}</strong></p>
                     <p class="card-text mb-auto">Address：<strong>{{$profile['restaurant_address']}}</strong></p>
