@@ -13,7 +13,7 @@
             <div class="col-md-9" style="margin-right: auto;margin-left: auto" id="col_list">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm bg-white  position-relative" >
                     <div class="col-auto d-none d-lg-block" >
-                        <img src="/img/indonesia_flag.png" alt="" width="250" height="250">
+                        <img src="/img/indonesia_flag.png" alt="" width="250" height="200">
                     </div>
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary"><a href="/profile/{{$profile['user_id']}}">{{$profile['restaurant_name']}}</a></strong>
