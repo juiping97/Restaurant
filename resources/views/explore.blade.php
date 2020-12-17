@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <div class="col-12 pt-4">
+    <div class="col-12 pt-2">
         <strong><h1 align="center"><p style="color: white;font-size: medium">&copy; 2020 NCU SE-Project Group 11<p></h1></strong><p></p>
     </div>
 @endsection
