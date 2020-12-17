@@ -7,7 +7,7 @@
     </body>
         <div class="column">
             <div class="col-sm-9 col-md-6"
-                 style="text-align:center; color:white; position: absolute; top:40%; font-family: 'Fredoka One', cursive;">
+                 style="text-align:center; color:white; position: absolute; top:35%; font-family: 'Fredoka One', cursive;">
                 <strong><h1 align="center">Search For Your</h1></strong><p></p>
                 <strong><h1 style="font-size:60px;width: 100%" align="center">RESTAURANT!!!</h1></strong><p></p>
                 <a href="/explore" class="btn btn-warning"
