@@ -23,6 +23,9 @@
                     <i class="fa fa-search"></i>
                 </form>
             </div>
+            <div class="col-12" style="position: absolute;top:95%;color: white">
+                <strong><h1 align="center"><p style="font-size: medium">&copy; 2020 NCU SE-Project Group 11<p></h1></strong><p></p>
+            </div>
         </div>
 @endsection
 
