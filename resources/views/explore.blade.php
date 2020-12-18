@@ -7,17 +7,17 @@
     </body>
     <div class="row">
         <div class="rectangle">
-            <div class="row">
-                <a href="/taiwan"><div id="DIV1" style=" background-image: url('{{asset('img/tai.jpg')}}');"></div></a>
-                <a href="/indonesia"><div id="DIV1" style=" background-image: url('{{asset('img/indonesia.jpg')}}');"></div></a>
-                <div id="DIV1"></div>
-                <div style="clear:both;"></div>
+            <div class="row justify-content-center">
+                <a href="/taiwan">
+                    <!-- <div id="DIV1" style=" background-image: url('{{asset('img/tai.jpg')}}')"></div> -->
+                        <div id="DIV1"><img src="/img/explore_taiwan.png" style="width: 250px;height: 250px"></div>
+                </a>
             </div>
-            <div class="row">
-                <div id="DIV1"></div>
-                <div id="DIV1"></div>
-                <div id="DIV1"></div>
-                <div style="clear:both;"></div>
+            <div class="row justify-content-center">
+                <a href="/indonesia">
+                    <!-- <div id="DIV1" style=" background-image: url('{{asset('img/indonesia.jpg')}}')"></div> -->
+                        <div id="DIV1"><img src="/img/explore_indonesia.png" style="width: 250px;height: 250px"></div>
+                </a>
             </div>
         </div>
     </div>
@@ -28,25 +28,31 @@
 
 <style>
     .rectangle{
-        margin-right: auto;
-        margin-left: auto;
-        height: 600px;
-        width: 1000px;
+        margin: auto;
+        height: 650px;
+        width: 750px;
         background-color: #FDC53A;
         border-radius:40px;
         opacity: 0.8;
     }
 
     #DIV1{
+        width:150px;
+        height:150px;
+        margin-left: -50%;
+        margin-right: -50%;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        float:left;
+    }
+    #DIV2{
+        position: absolute;
+
         width:250px;
         height:180px;
         line-height:50px;
         padding:20px;
         border:2px blue solid;
-        margin-right:20px;
-        margin-left: 60px;
-        margin-top: 80px;
-        float:left;
     }
 
     .bg {
