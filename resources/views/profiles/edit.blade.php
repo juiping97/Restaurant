@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-8 offset-2">
 
-                    <div class="row"
+                    <div class="row justify-content-center"
                          style="font-family: 'Fredoka One', cursive; color: white;">
                         <h1>~My Restaurant Info~</h1>
                     </div>

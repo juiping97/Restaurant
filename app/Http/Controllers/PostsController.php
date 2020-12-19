@@ -56,7 +56,6 @@ class PostsController extends Controller
             'caption' => 'required',
             'image' => ['required','image'],
         ]);
-
         $imagePath=$request->file('image')->store('uploads','s3');
         /*
         $image = Image::make(Storage::disk('s3')+$imagePath)->fit(1200,1200);

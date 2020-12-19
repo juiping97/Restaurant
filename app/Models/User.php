@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Mail\NewUserWelcomeMail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -48,6 +49,8 @@ class User extends Authenticatable
             $user -> profile() ->create([
                 'restaurant_name' => $user->username,
             ]);
+
+            Mail::to($user->email)->send(new NewUserWelcomeMail());
         });
     }
 

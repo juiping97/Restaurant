@@ -4,9 +4,9 @@
 Explore Now~~~
 
 @component('mail::button', ['url' => '/welcome'])
-Button Text
+Explore Now
 @endcomponent
 
-Thanks,<br>
-{{ config('app.name') }}
 @endcomponent
+
+
