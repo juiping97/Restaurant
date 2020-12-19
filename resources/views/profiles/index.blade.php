@@ -6,7 +6,7 @@
             <div class="col-3 p-5">
                 <img src="{{Storage::disk('s3')->url($user->profile->profileImage())}}" class="rounded-circle w-100">
             </div>
-            <div class="col-9 pt-5">
+            <div class="col-9 pt-5 w-100">
                 <div class="d-flex justify-content-between align-items-baseline">
                     <div class="d-flex align-items-center">
                         <div class="h2">{{$user->profile->restaurant_name ?? $user -> username }}</div>
