@@ -49,8 +49,6 @@ class User extends Authenticatable
             $user -> profile() ->create([
                 'restaurant_name' => $user->username,
             ]);
-
-            Mail::to($user->email)->send(new NewUserWelcomeMail());
         });
     }
 

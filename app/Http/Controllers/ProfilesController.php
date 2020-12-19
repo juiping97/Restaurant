@@ -63,12 +63,12 @@ class ProfilesController extends Controller
 
     public function taiwan(){
         $data = Profile::where('restaurant_country','=','Taiwan')->paginate(10);
-        return view('taiwan',['profiles' => $data]);
+        return view('country.taiwan',['profiles' => $data]);
     }
 
     public function indonesia(){
         $data = Profile::where('restaurant_country','=','Indonesia')->paginate(10);
-        return view('indonesia',['profiles' => $data]);
+        return view('country.indonesia',['profiles' => $data]);
     }
 
 }
