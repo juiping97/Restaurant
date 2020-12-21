@@ -109,7 +109,7 @@
 
 <script>
     function submitForm(){
-        var action_src = "http://restaurant-env-1.eba-ygiaem7u.us-east-1.elasticbeanstalk.com/" + document.getElementsByName("country")[0].value;
+        var action_src = "http://restaurant-env-1.eba-ygiaem7u.us-east-1.elasticbeanstalk.com/" + (document.getElementsByName("country")[0].value).toLowerCase();
         var search_country = document.getElementById('search_country');
         search_country.action = action_src ;
     }

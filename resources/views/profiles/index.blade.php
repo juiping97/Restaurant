@@ -3,18 +3,20 @@
 @section('content')
     <div class="container" style="color: white">
         <div class="row">
+            <div class="col-12">
+                <a href="/explore" class="btn btn-warning" style="font-family: 'Fredoka One', cursive;">Back</a>
+            </div>
             <div class="col-3 p-5">
                 <img src="{{Storage::disk('s3')->url($user->profile->profileImage())}}" class="rounded-circle w-100">
             </div>
-            <div class="col-9 pt-5 w-100">
+            <div class="col-9 pt-5">
                 <div class="d-flex justify-content-between align-items-baseline">
                     <div class="d-flex align-items-center">
-                        <div class="h2">{{$user->profile->restaurant_name ?? $user -> username }}</div>
+                        <div class="h3 w-100">{{$user->profile->restaurant_name ?? $user -> username }}</div>
 
                         <follow-button user-id="{{$user->id}}" follows="{{$follows}}"></follow-button>
                     </div>
-
-                    <a href="/post/create">Add New Post</a>
+                    <a class="btn btn-warning" href="/post/create">Add New Post</a>
                 </div>
                 @can('update',$user->profile)
                     <a href="/profile/{{$user->id}}/edit">Edit Profile</a>
