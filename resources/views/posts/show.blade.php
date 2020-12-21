@@ -35,6 +35,11 @@
         </div>
         <hr style="border-top: 1px solid white">
         <a href="/profile/{{$post->user->id}}" class="btn btn-primary align-content-md-center pt-3 pr-3" >Back To Profile</a>
+
+        <form action="{{route('post.destroy',$post->id)}}" method="post">
+            @csrf
+            <button class="btn btn-warning">Delete Post</button>
+        </form>
     </div>
 @endsection
 
