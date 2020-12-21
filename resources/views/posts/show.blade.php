@@ -38,7 +38,7 @@
 
         <form action="{{route('post.destroy',$post->id)}}" method="post">
             @csrf
-            <button class="btn btn-warning">Delete Post</button>
+            <button class="btn btn-primary align-content-md-center pt-3 pr-3">Delete Post</button>
         </form>
     </div>
 @endsection
