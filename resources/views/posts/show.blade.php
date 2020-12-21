@@ -14,9 +14,7 @@
 
                         <div>
                             <div class="font-weight-bold">
-                                <a href="/profile/{{$post->user->id}}">
-                                    <span class="text-white">{{$post->user->username}}</span>
-                                </a>
+                                <h3>評論區域</h3>
                             </div>
                         </div>
                     </div>
