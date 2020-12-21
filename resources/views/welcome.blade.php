@@ -115,13 +115,13 @@
             case 'TAIWAN':
             case 'Taiwan':
             case 'taiwan':
-                words = taiwan;
+                words = "taiwan";
                 break;
             case '印尼':
             case 'INDONESIA':
             case 'indonesia':
             case 'Indonesia':
-                words = indonesia;
+                words = "indonesia";
                 break;
         }
         var action_src = "http://restaurant-env-1.eba-ygiaem7u.us-east-1.elasticbeanstalk.com/" + words;
