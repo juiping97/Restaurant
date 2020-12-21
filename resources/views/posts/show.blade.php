@@ -34,12 +34,17 @@
             </div>
         </div>
         <hr style="border-top: 1px solid white">
-        <a href="/profile/{{$post->user->id}}" class="btn btn-primary align-content-md-center pt-3 pr-3" >Back To Profile</a>
+        
+        <div class="row align-content-md-center pt-3 pr-3">
+            <div class="d-flex justify-content-between align-items-baseline">
+                <a href="/profile/{{$post->user->id}}" class="btn btn-primary align-content-md-center pt-3 pr-3" >Back To Profile</a>
 
-        <form action="{{route('post.destroy',$post->id)}}" method="post">
-            @csrf
-            <button class="btn btn-primary align-content-md-center pt-3 pr-3">Delete Post</button>
-        </form>
+                <form action="{{route('post.destroy',$post->id)}}" method="post">
+                    @csrf
+                    <button class="btn btn-primary align-content-md-center pt-3 pr-3">Delete Post</button>
+                </form>
+            </div>
+        </div>
     </div>
 @endsection
 
