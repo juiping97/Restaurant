@@ -36,10 +36,7 @@
         <hr style="border-top: 1px solid white">
         <a href="/profile/{{$post->user->id}}" class="btn btn-primary align-content-md-center pt-3 pr-3" >Back To Profile</a>
 
-        {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
-            {{Form::hidden('_method', 'DELETE')}}
-            {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
-        {!!Form::close()!!}
+        <a href="{{route('post.destroy'),[post=>$post->id]}}" class="btn btn-primary align-content-md-center pt-3 pr-3" >Back To Profile</a>
     </div>
 @endsection
 
