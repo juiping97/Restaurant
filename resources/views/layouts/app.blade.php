@@ -61,6 +61,9 @@
                                     <a class="dropdown-item" href="/profile/{{Auth::user()->id}}/edit">
                                         <strong>Register Restaurant</strong>
                                     </a>
+                                    <a class="dropdown-item" href="/profile/{{Auth::user()->id}}">
+                                        <strong>My Restaurant</strong>
+                                    </a>
 
                                     <a class="dropdown-item" href="/favorite">
                                         <strong>{{ __('See My Favorite') }}</strong>
