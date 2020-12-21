@@ -37,13 +37,13 @@
 
         <div class="row align-content-md-center pt-3 pr-3">
             <div class="d-flex justify-content-between align-items-baseline">
-                <a href="/profile/{{$post->user->id}}" class="btn btn-primary pr-4 " >Back To Profile</a>
-
-                <form action="{{route('post.destroy',$post->id)}}" method="post">
-                    @csrf
-                    <button class="btn btn-primary">Delete Post</button>
-                </form>
+                <a href="/profile/{{$post->user->id}}" class="btn btn-primary pr-4" >Back To Profile</a>
             </div>
+
+            <form action="{{route('post.destroy',$post->id)}}" method="post">
+                @csrf
+                <button class="btn btn-primary">Delete Post</button>
+            </form>
         </div>
     </div>
 @endsection
