@@ -35,6 +35,18 @@
             </div>
         </div>
         <hr style="border-top: 1px solid white">
-        <a href="/profile/{{$post->user->id}}" class="btn btn-primary align-content-md-center pt-3" >Back To Profile</a>
+        <a href="/profile/{{$post->user->id}}" class="btn btn-primary align-content-md-center pt-3 pr-3" >Back To Profile</a>
+
+        @method('delete')
+        <button id="submit"
+                name="submit"
+                class="btn btn-primary"
+                style="font-family: 'Fredoka One', cursive; color: white;">Post Delete
+        </button>
+
     </div>
 @endsection
+
+<script>
+
+</script>

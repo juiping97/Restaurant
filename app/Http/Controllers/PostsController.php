@@ -75,4 +75,9 @@ class PostsController extends Controller
     {
         return view('posts.show',compact('post'));
     }
+
+    public function destroy(Post $post){
+        $post->delete();
+        return view('welcome');
+    }
 }
