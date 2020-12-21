@@ -2,7 +2,7 @@
 @section('content')
     <div class="col-12 pt-2">
         <div class="col-12 d-flex">
-            <a href="/explore" class="btn btn-warning" style="font-family: 'Fredoka One', cursive;">Back</a>
+            <a href="/wlecome" class="btn btn-warning" style="font-family: 'Fredoka One', cursive;">Back</a>
         </div>
         <div class="col-12 d-flex justify-content-center">
             <strong><h1 style="color: white;font-family: 'Fredoka One', cursive">Restaurant in Taiwan</h1></strong>

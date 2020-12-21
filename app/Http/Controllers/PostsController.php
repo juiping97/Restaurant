@@ -71,13 +71,14 @@ class PostsController extends Controller
     }
 
 
-    public function show(\App\Models\Post $post)
+    public function show(Post $post)
     {
         return view('posts.show',compact('post'));
     }
 
-    public function destroy(Post $post){
-        Post::find($post)->delete();
-        return view('welcome');
+    public function destroy($id){
+        $post = Post::find($id);
+        $post->delete();
+        return redirect('/profile/'.auth()->user()->id);
     }
 }

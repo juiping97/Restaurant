@@ -37,13 +37,10 @@
         <hr style="border-top: 1px solid white">
         <a href="/profile/{{$post->user->id}}" class="btn btn-primary align-content-md-center pt-3 pr-3" >Back To Profile</a>
 
-        @method('delete')
-        <button id="submit"
-                name="submit"
-                class="btn btn-primary"
-                style="font-family: 'Fredoka One', cursive; color: white;">Post Delete
-        </button>
-
+        {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'pull-right'])!!}
+            {{Form::hidden('_method', 'DELETE')}}
+            {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+        {!!Form::close()!!}
     </div>
 @endsection
 
