@@ -109,7 +109,22 @@
 
 <script>
     function submitForm(){
-        var action_src = "http://restaurant-env-1.eba-ygiaem7u.us-east-1.elasticbeanstalk.com/" + (document.getElementsByName("country")[0].value).toLowerCase();
+        var words = "";
+        switch(document.getElementsByName("country")[0].value){
+            case '台灣':
+            case 'TAIWAN':
+            case 'Taiwan':
+            case 'taiwan':
+                words = taiwan;
+                break;
+            case '印尼':
+            case 'INDONESIA':
+            case 'indonesia':
+            case 'Indonesia':
+                words = indonesia;
+                break;
+        }
+        var action_src = "http://restaurant-env-1.eba-ygiaem7u.us-east-1.elasticbeanstalk.com/" + words;
         var search_country = document.getElementById('search_country');
         search_country.action = action_src ;
     }
