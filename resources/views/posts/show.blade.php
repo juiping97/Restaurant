@@ -4,7 +4,7 @@
     <div class="container" style="color: white">
         <div class="row">
             <div class="col-8">
-                <img src="{{Storage::disk('s3')->url($post->image)}}" alt="" class="w-100">
+                <img src="{{Storage::disk('s3')->url($post->image)}}" alt="" class="w-100 h-100">
             </div>
             <div class="col-4">
                 <div>
