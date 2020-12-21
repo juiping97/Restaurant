@@ -11,7 +11,6 @@
                     <div class="d-flex align-items-center">
                         <div class="pr-3">
                         </div>
-
                         <div>
                             <div class="font-weight-bold" align="center">
                                 <h3 style="color: white; font-family: 'Fredoka One', cursive">評論區域</h3>
