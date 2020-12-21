@@ -13,7 +13,7 @@
                         </div>
 
                         <div>
-                            <div class="font-weight-bold">
+                            <div class="font-weight-bold" align="center">
                                 <h3 style="color: white; font-family: 'Fredoka One', cursive">評論區域</h3>
                             </div>
                         </div>
