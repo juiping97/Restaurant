@@ -13,11 +13,11 @@
                     <div class="form-group row">
                         <label for="caption" class="col-md-4 col-form-label">Post Caption</label>
 
-                        <input id="caption"
+                        <textarea id="caption"
                                type="text"
                                class="form-control @error('caption') is-invalid @enderror"
                                name="caption" value="{{ old('caption') }}"
-                               required autocomplete="caption" autofocus>
+                               required autocomplete="caption" autofocus placeholder="Enter Your Comment">
 
                         @error('caption')
                         <span class="invalid-feedback" role="alert">
