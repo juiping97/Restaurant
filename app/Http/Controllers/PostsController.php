@@ -82,4 +82,10 @@ class PostsController extends Controller
 
         return redirect('/profile/'.auth()->user()->id);
     }
+
+    public function edit($post){
+
+        $post = Post::find($post)->get();
+        return view(posts.edit,compact('post'));
+    }
 }
