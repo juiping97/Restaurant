@@ -17,7 +17,9 @@
                                type="text"
                                class="form-control @error('caption') is-invalid @enderror"
                                name="caption" value="{{ old('caption') }}"
-                               required autocomplete="caption" autofocus placeholder="Enter Your Comment">
+                                  required autocomplete="caption" autofocus placeholder="Enter Your Comment">
+
+                        </textarea>
 
                         @error('caption')
                         <span class="invalid-feedback" role="alert">
