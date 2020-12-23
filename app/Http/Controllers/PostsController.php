@@ -84,6 +84,7 @@ class PostsController extends Controller
     }
 
     public function edit($post){
-        return Post::find($post);
+        $data = Post::find($post);
+        return view('posts.edit',['data'=>$data]);
     }
 }
