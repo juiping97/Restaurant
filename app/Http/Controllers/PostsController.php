@@ -26,6 +26,7 @@ class PostsController extends Controller
 
     public function create()
     {
+        $this -> middleware('auth');
         return view('posts.create');  //views
     }
 
