@@ -13,7 +13,7 @@
                         </div>
                         <div>
                             <div class="font-weight-bold" align="center">
-                                <h3 style="color: white; font-family: 'Fredoka One', cursive">評論區域</h3>
+                                <h3 style="color: white; font-family: 'Fredoka One', cursive">Comment Section</h3>
                             </div>
                         </div>
                     </div>
@@ -37,9 +37,11 @@
                 <a href="/profile/{{$post->user->id}}" class="btn btn-primary" >Back To Profile</a>
             </div>
 
-            <div class="d-flex justify-content-between align-items-baseline pr-4">
-                <a href="{{"/post/$post->id/edit"}}" class="btn btn-primary">Edit</a>
-            </div>
+            @can('update',$post->user->id)
+                <div class="d-flex justify-content-between align-items-baseline pr-4">
+                    <a href="{{"/post/$post->id/edit"}}" class="btn btn-primary">Edit</a>
+                </div>
+            @endcan
 
             <div class="d-flex justify-content-between align-items-baseline pr-4">
                 <form action="{{route('post.destroy',$post->id)}}" method="post">
