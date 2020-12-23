@@ -33,6 +33,7 @@ Route::get('/post/create',[App\Http\Controllers\PostsController::class,'create']
 Route::post('/post',[App\Http\Controllers\PostsController::class,'store']);
 Route::get('/post/{post}',[App\Http\Controllers\PostsController::class,'show']);
 Route::post('/post/{post}',[App\Http\Controllers\PostsController::class, 'destroy'])->name('post.destroy');
+
 Route::get('/post/{post}/edit',[App\Http\Controllers\PostsController::class, 'edit']);
 Route::post('/post/{post}',[App\Http\Controllers\PostsController::class, 'update']);
 
