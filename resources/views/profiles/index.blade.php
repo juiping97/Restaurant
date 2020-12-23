@@ -16,7 +16,7 @@
 
                         <follow-button user-id="{{$user->id}}" follows="{{$follows}}"></follow-button>
                     </div>
-                    <a class="btn btn-warning" href="/post/create">Add New Post</a>
+                    <a class="btn btn-warning" href="/post/create">Comment</a>
                 </div>
                 @can('update',$user->profile)
                     <a href="/profile/{{$user->id}}/edit">Edit Profile</a>
