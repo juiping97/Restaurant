@@ -36,7 +36,7 @@
 
         computed: {
             buttonText(){
-                return (this.status) ? 'Unfollow' : 'Follow';
+                return (this.status) ? 'Unlike' : 'Like';
             }
         }
     }
