@@ -57,17 +57,12 @@ class PostsController extends Controller
             'image' => ['required','image'],
         ]);
 
-        //this one -> $imagePath=$request->file('image')->store('uploads','s3');
+        $imagePath=$request->file('image')->store('uploads','s3');
 
         /*
         $image = Image::make(Storage::disk('s3')+$imagePath)->fit(1200,1200);
         $image->save();
         */
-        $imagePath = $request->file('image');
-
-        $thumb_img = Image::make($imagePath->getRealPath())->resize(1200, 1200);
-        $thumb_img->store('uploads','s3');
-        $imagePath = 'uploads/'.$imagePath;
 
         auth()->user()->posts()->create([
             'caption' => $data['caption'],
