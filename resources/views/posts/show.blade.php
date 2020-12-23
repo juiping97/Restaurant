@@ -42,10 +42,8 @@
                 <button class="btn btn-danger">Delete Post</button>
             </form>
 
-            <form action="{{url('/post/'.$post->id.'/edit')}}" method="post">
-                @csrf
-                <button class="btn btn-danger">Delete Post</button>
-            </form>
+            <a href="{{"/post/.$post->id./edit"}}" class="btn btn-primary"></a>
+
         </div>
     </div>
 @endsection
