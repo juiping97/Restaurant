@@ -42,7 +42,7 @@
                 <button class="btn btn-danger">Delete Post</button>
             </form>
 
-            <a href="{{"/post/.$post->id./edit"}}" class="btn btn-primary">Edit</a>
+            <a href="{{"/post/$post->id/edit"}}" class="btn btn-primary">Edit</a>
 
         </div>
     </div>
