@@ -88,7 +88,10 @@ class PostsController extends Controller
         return view('posts.edit',['post'=>$post]);
     }
 
-    public function show2($post){
-        return Post::find($post);
+    public function update(Request $request){
+        $post = Post::find($request->id);
+        $post->caption=$request->caption;
+        $post->save();
+        return redirect('/post/'.$request->id);
     }
 }

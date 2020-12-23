@@ -2,8 +2,9 @@
 
 @section('content')
     <div class="container" style="color: white">
-        <form action="" enctype="multipart/form-data" method="post">
+        <form action="/post/{{$post->id}}" enctype="multipart/form-data" method="post">
             @csrf
+            <input type="hidden" name="id" value="{{$post['id']}}">
             <div class="row">
                 <div class="col-8 offset-2">
 
@@ -31,7 +32,6 @@
                     <div class="row pt-4">
                         <button class="btn btn-primary">Update</button>
                     </div>
-
                 </div>
             </div>
         </form>
