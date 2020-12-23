@@ -35,8 +35,6 @@ Route::get('/post/{post}',[App\Http\Controllers\PostsController::class,'show']);
 Route::post('/post/{post}',[App\Http\Controllers\PostsController::class, 'destroy'])->name('post.destroy');
 
 Route::get('/post/{post}/edit',[App\Http\Controllers\PostsController::class, 'edit']);
-Route::post('/post/',[App\Http\Controllers\PostsController::class, 'update']);
-
 
 Route::get('/profile/{user}',[App\Http\Controllers\ProfilesController::class, 'index'])->name('profile.show');
 Route::get('/profile/{user}/edit',[App\Http\Controllers\ProfilesController::class, 'edit'])->name('profile.edit');
