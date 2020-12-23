@@ -54,15 +54,10 @@ class PostsController extends Controller
     {
         $data = $request->validate([
             'caption' => 'required',
-            'image' => ['required','image'],
+            'image' => ['required'],
         ]);
 
         $imagePath=$request->file('image')->store('uploads','s3');
-
-        /*
-        $image = Image::make(Storage::disk('s3')+$imagePath)->fit(1200,1200);
-        $image->save();
-        */
 
         auth()->user()->posts()->create([
             'caption' => $data['caption'],

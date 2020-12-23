@@ -42,7 +42,6 @@
                 <div class="col-4 pb-4">
                     <a href="/post/{{ $post->id }}">
                         <img src="{{Storage::disk('s3')->url($post->image)}}" class="w-100">
-
                     </a>
                 </div>
             @endforeach
