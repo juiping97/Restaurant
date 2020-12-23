@@ -17,7 +17,7 @@
                                type="text"
                                class="form-control @error('caption') is-invalid @enderror"
                                name="caption" value="{{$post['caption']}}"
-                                  required autocomplete="caption" autofocus >
+                                  required autocomplete="caption" autofocus placeholder="{{$post['caption']}}">
 
                         </textarea>
 

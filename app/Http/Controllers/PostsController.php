@@ -87,4 +87,8 @@ class PostsController extends Controller
         $post = Post::find($post);
         return view('posts.edit',['post'=>$post]);
     }
+
+    public function show2($post){
+        return Post::find($post);
+    }
 }
