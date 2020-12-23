@@ -4,6 +4,7 @@
     <div class="container" style="color: white">
         <form action="/post/{{$post->id}}" enctype="multipart/form-data" method="post">
             @csrf
+            @method('PATCH')
             <input type="hidden" name="id" value="{{$post['id']}}">
             <div class="row">
                 <div class="col-8 offset-2">
@@ -15,9 +16,9 @@
                         <label for="caption" class="col-md-4 col-form-label">Post Caption</label>
 
                         <textarea id="caption"
-                               type="text"
-                               class="form-control @error('caption') is-invalid @enderror"
-                               name="caption" value="{{$post['caption']}}"
+                                  type="text"
+                                  class="form-control @error('caption') is-invalid @enderror"
+                                  name="caption" value="{{$post['caption']}}"
                                   required autocomplete="caption" autofocus placeholder="{{$post['caption']}}">
 
                         </textarea>
