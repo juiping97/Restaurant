@@ -21,11 +21,7 @@
                     <hr style="border-top: 1px solid white">
 
                     <p>
-                        <span class="font-weight-bold">
-                            <a href="/profile/{{$post->user->id}}">
-                                <span class="text-white">{{$post->user->username}}</span>
-                            </a>
-                        </span> {{$post->caption}}
+                        {{$post->caption}}
                     </p>
                 </div>
             </div>
