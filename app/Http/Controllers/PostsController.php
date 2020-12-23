@@ -37,7 +37,7 @@ class PostsController extends Controller
             'image' => ['required','image'],
         ]);
 
-        $imagePath=request('image')->store('uploads','s3'); //照片存在storage->app>public->uploads
+        $imagePath=request('image')->store('uploads','public'); //照片存在storage->app>public->uploads
         $image = Image::make("https://restaurantbucket.s3.amazonaws.com/{$imagePath}")->fit(1200,1200);
         $image->save();
 
@@ -61,6 +61,8 @@ class PostsController extends Controller
         $image = Image::make(Storage::disk('s3')+$imagePath)->fit(1200,1200);
         $image->save();
         */
+        $image = Image::make(public_path(Storage::disk('s3')/$imagePath))->resize(1200,1200);
+        $image->save();
 
         auth()->user()->posts()->create([
             'caption' => $data['caption'],
