@@ -39,9 +39,9 @@
 
         <div class="row pt-5">
             @foreach($user->posts as $post)
-                <div class="col-4 pb-4">
+                <div class="col-4 pb-4 w-100 h-100">
                     <a href="/post/{{ $post->id }}">
-                        <img src="{{Storage::disk('s3')->url($post->image)}}" class="resize">
+                        <img src="{{Storage::disk('s3')->url($post->image)}}" class="w-100 h-100">
 
                     </a>
                 </div>
@@ -51,8 +51,5 @@
 
 @endsection
 <style>
-    img.resize {
-        width:1200px;
-        height:1200px;
-    }
+
 </style>
