@@ -37,12 +37,12 @@
                 <a href="/profile/{{$post->user->id}}" class="btn btn-primary" >Back To Profile</a>
             </div>
 
+            <a href="{{"/post/$post->id/edit"}}" class="btn btn-primary">Edit</a>
+
             <form action="{{route('post.destroy',$post->id)}}" method="post">
                 @csrf
                 <button class="btn btn-danger">Delete Post</button>
             </form>
-
-            <a href="{{"/post/$post->id/edit"}}" class="btn btn-primary">Edit</a>
 
         </div>
     </div>
