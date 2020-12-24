@@ -77,12 +77,12 @@ class PostsController extends Controller
 
         $post->delete();
 
-        return redirect('/profile/'.auth()->user()->id);
+        return redirect('/profile/'.auth()->user()->post);
     }
 
     public function edit($post){
 
-        $this->authorize('update',$post);
+        $this->authorize('update',auth()->user()->post);
 
         $post = Post::find($post);
         return view('posts.edit',['post'=>$post]);
@@ -90,7 +90,7 @@ class PostsController extends Controller
 
     public function update(Request $request){
 
-        $this->authorize('update',$request);
+        $this->authorize('update',auth()->user()->post);
 
         $post = Post::find($request->id);
         $post->caption=$request->caption;
