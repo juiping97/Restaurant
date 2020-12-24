@@ -63,8 +63,9 @@ class PostsController extends Controller
             'caption' => $data['caption'],
             'image' => $imagePath
         ]);
+        $path = url()->previous();
 
-        return redirect('/profile/'.auth()->user()->id);
+        return redirect('/'.$path);
     }
 
 
