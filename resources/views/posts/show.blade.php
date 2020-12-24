@@ -32,7 +32,7 @@
             <div class="d-flex justify-content-between align-items-baseline pr-4">
                 <a href="/profile/{{$post->user->id}}" class="btn btn-primary" >Back To Profile</a>
             </div>
-            <!--@if(auth()->user() == $post->user)-->
+
                 <div class="d-flex justify-content-between align-items-baseline pr-4">
                     <a href="{{"/post/$post->id/edit"}}" class="btn btn-primary">Edit</a>
                 </div>
@@ -43,7 +43,7 @@
                 <button class="btn btn-danger">Delete</button>
                 </form>
             </div>
-            <!--@endif-->
+
 
         </div>
     </div>
