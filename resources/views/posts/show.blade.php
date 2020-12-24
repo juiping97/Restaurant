@@ -36,14 +36,15 @@
                 <div class="d-flex justify-content-between align-items-baseline pr-4">
                     <a href="{{"/post/$post->id/edit"}}" class="btn btn-primary">Edit</a>
                 </div>
-            @endauth
 
             <div class="d-flex justify-content-between align-items-baseline pr-4">
                 <form action="{{route('post.destroy',$post->id)}}" method="post">
                     @csrf
-                <button class="btn btn-danger">Delete Post</button>
+                <button class="btn btn-danger">Delete</button>
                 </form>
             </div>
+            @endauth
+
         </div>
     </div>
 @endsection
