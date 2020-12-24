@@ -27,6 +27,7 @@ class PostsController extends Controller
     public function create()
     {
         $path = request()->path();
+        dd($path);
         $path = substr($path, 8, -1);
         dd($path);
         return view('posts.create',compact('path'));  //views
