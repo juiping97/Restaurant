@@ -18,7 +18,7 @@
                         <textarea id="caption"
                                   type="text"
                                   class="form-control @error('caption') is-invalid @enderror"
-                                  name="caption" value="{{$post['caption']}}"
+                                  name="caption" value="{{ old('caption') ?? $post['caption'] }}"
                                   required autocomplete="caption" autofocus>
 
                         </textarea>
