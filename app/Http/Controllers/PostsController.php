@@ -63,12 +63,17 @@ class PostsController extends Controller
 
         $imagePath=$request->file('image')->store('uploads','s3');
 
-        //\App\Models\Post::create($data);
-        auth()->user()->posts()->create([
+         Post::createcreate([
+             'user_id' => $request->path,
+             'caption' => $data['caption'],
+             'image' => $imagePath]);
+        /*
+         * auth()->user()->posts()->create([
             'user_id' => $request->path,
             'caption' => $data['caption'],
             'image' => $imagePath
         ]);
+        */
 
         return redirect('/profile/'.auth()->user()->id);
     }
