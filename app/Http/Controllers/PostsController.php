@@ -65,7 +65,7 @@ class PostsController extends Controller
         ]);
         $path = url()->previous();
 
-        return redirect('/'.$path);
+        return url()->previous();
     }
 
 
