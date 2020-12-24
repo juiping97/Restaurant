@@ -83,11 +83,15 @@ class PostsController extends Controller
     public function edit($post){
 
         $this->authorize('update',$post);
+
         $post = Post::find($post);
         return view('posts.edit',['post'=>$post]);
     }
 
     public function update(Request $request){
+
+        $this->authorize('update',$request);
+
         $post = Post::find($request->id);
         $post->caption=$request->caption;
         $post->save();
