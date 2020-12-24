@@ -65,8 +65,8 @@ class PostsController extends Controller
         ]);
         $Path = url()->previous();
 
-        return url()->previous();
-        //return redirect('/profile/'.auth()->user()->id);
+        //return url()->previous();
+        return redirect('/profile/'.auth()->user()->id);
     }
 
 
