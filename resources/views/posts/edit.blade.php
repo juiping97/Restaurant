@@ -14,13 +14,11 @@
                     </div>
                     <div class="form-group row">
                         <label for="caption" class="col-md-4 col-form-label">Post Caption</label>
-
                         <textarea id="caption"
                                   type="text"
                                   class="form-control @error('caption') is-invalid @enderror"
                                   name="caption" value="{{ old('caption') ?? $post['caption'] }}"
                                   required autocomplete="caption" autofocus>
-
                         </textarea>
 
                         @error('caption')
