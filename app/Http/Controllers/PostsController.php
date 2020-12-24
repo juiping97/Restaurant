@@ -62,9 +62,9 @@ class PostsController extends Controller
         ]);
 
         $imagePath=$request->file('image')->store('uploads','s3');
-
+        
          Post::create([
-             'user_id' => $request->path,
+             'user_id' => intval($request->path),
              'caption' => $data['caption'],
              'image' => $imagePath]);
         /*
