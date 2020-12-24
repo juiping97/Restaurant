@@ -77,7 +77,7 @@ class PostsController extends Controller
 
         $post->delete();
 
-        return redirect('/profile/'.auth()->user()->post);
+        return redirect('/profile/'.auth()->user()->id);
     }
 
     public function edit($post){
