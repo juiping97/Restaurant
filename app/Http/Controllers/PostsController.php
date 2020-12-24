@@ -27,11 +27,9 @@ class PostsController extends Controller
     public function create()
     {
         $path = $_SERVER['HTTP_REFERER'];
-        $path_parts = pathinfo($path);
-        $result = $path_parts['basename'];
-        dd($result);
-        $path = substr($path, 8, -1);
-        dd($path);
+        $path = pathinfo($path);
+        $path = $path['basename'];
+
         return view('posts.create',compact('path'));  //views
         //return view('posts.create');
     }
