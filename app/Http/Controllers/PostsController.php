@@ -87,7 +87,7 @@ class PostsController extends Controller
     }
 
     public function update(Request $request){
-        
+
         $post = Post::find($request->id);
         $post->caption=$request->caption;
         $post->save();
