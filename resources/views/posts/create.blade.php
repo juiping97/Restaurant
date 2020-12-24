@@ -4,6 +4,7 @@
     <div class="container" style="color: white">
         <form action="/post" enctype="multipart/form-data" method="post">
             @csrf
+            <input type="hidden" name="path" value="{{$path}}">
             <div class="row">
                 <div class="col-8 offset-2">
 
