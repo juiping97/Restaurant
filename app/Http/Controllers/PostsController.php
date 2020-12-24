@@ -28,6 +28,7 @@ class PostsController extends Controller
     {
         $path = request()->path();
         $path = substr($path, 8, -1);
+        dd($path);
         return view('posts.create',compact('path'));  //views
         //return view('posts.create');
     }
@@ -62,7 +63,7 @@ class PostsController extends Controller
         ]);
 
         $imagePath=$request->file('image')->store('uploads','s3');
-        
+
          Post::create([
              'user_id' => intval($request->path),
              'caption' => $data['caption'],
