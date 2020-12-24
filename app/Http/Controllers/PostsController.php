@@ -63,9 +63,7 @@ class PostsController extends Controller
             'caption' => $data['caption'],
             'image' => $imagePath
         ]);
-        $Path = url()->previous();
 
-        //return url()->previous();
         return redirect('/profile/'.auth()->user()->id);
     }
 
@@ -76,10 +74,10 @@ class PostsController extends Controller
     }
 
     public function destroy(Post $post){
-        $user = $post->user_id;
+
         $post->delete();
 
-        return redirect('/profile/'.$user);
+        return redirect('/profile/'.auth()->user()->post);
     }
 
     public function edit($post){
