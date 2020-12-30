@@ -21,7 +21,7 @@ class PostsController extends Controller
 
         $posts = Profile::whereIn('user_id',$users)->get();
 
-        return view('favorite', compact('posts'));
+        return view('posts.index', compact('posts'));
     }
 
     public function create()

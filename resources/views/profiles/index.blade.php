@@ -7,8 +7,7 @@
                 <a href="/explore" class="btn btn-warning" style="font-family: 'Fredoka One', cursive;">Back</a>
             </div>
             <div class="col-3 p-5">
-                <img src="{{Storage::disk('s3')->url($user->profile->profileImage())}}"
-                     class="rounded-circle w-100" style="border-radius:50%">
+                <img src="{{Storage::disk('s3')->url($user->profile->profileImage())}}" class="rounded-circle w-100">
             </div>
             <div class="col-9 pt-5">
                 <div class="d-flex justify-content-between align-items-baseline">
@@ -32,7 +31,7 @@
                 <div class="pt-4 font-weight-bold"><strong>Country：&emsp;</strong>{{$user->profile->restaurant_country}}</div>
                 <div class="font-weight-bold"><strong>Telephone：&emsp;</strong>{{$user->profile->restaurant_phone}}</div>
                 <div class="font-weight-bold"><strong>Address：&nbsp;</strong>{{$user->profile->restaurant_address}}</div>
-                <div class="font-weight-bold"><strong>Address Url：&nbsp;</strong><a href="{{$user->profile->restaurant_url}}">{{$user->profile->restaurant_url}}</a></div>
+                <div class="font-weight-bold"><strong>Address Url：&nbsp;</strong><a href="">{{$user->profile->restaurant_url}}</a></div>
                 <div class="font-weight-bold"><strong>Open Time：&nbsp;</strong>{{$user->profile->open_time}}</div>
                 <div class="font-weight-bold"><strong>Description：&nbsp;</strong>{{$user->profile->restaurant_info}}</div>
             </div>

@@ -6,8 +6,7 @@
             @foreach($posts as $post)
                 <div class="col-4 pb-4">
                     <a href="/profile/{{$post->user->id}}">
-                    <img src="{{Storage::disk('s3')->url($post->user->profile->profileImage())}}"
-                         class="rounded-circle w-25" style="border-radius:50%">
+                    <img src="{{Storage::disk('s3')->url($post->user->profile->profileImage())}}" class="rounded-circle w-25">
                     </a>
 
                     <a href="/profile/{{$post->user->id}}">
