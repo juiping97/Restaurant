@@ -7,7 +7,8 @@
                 <a href="/explore" class="btn btn-warning" style="font-family: 'Fredoka One', cursive;">Back</a>
             </div>
             <div class="col-3 p-5">
-                <img src="{{Storage::disk('s3')->url($user->profile->profileImage())}}" class="rounded-circle w-100">
+                <img src="{{Storage::disk('s3')->url($user->profile->profileImage())}}"
+                     class="rounded-circle w-100" style="border-radius:50%">
             </div>
             <div class="col-9 pt-5">
                 <div class="d-flex justify-content-between align-items-baseline">
