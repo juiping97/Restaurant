@@ -32,7 +32,7 @@
                 <div class="pt-4 font-weight-bold"><strong>Country：&emsp;</strong>{{$user->profile->restaurant_country}}</div>
                 <div class="font-weight-bold"><strong>Telephone：&emsp;</strong>{{$user->profile->restaurant_phone}}</div>
                 <div class="font-weight-bold"><strong>Address：&nbsp;</strong>{{$user->profile->restaurant_address}}</div>
-                <div class="font-weight-bold"><strong>Address Url：&nbsp;</strong><a href="">{{$user->profile->restaurant_url}}</a></div>
+                <div class="font-weight-bold"><strong>Address Url：&nbsp;</strong><a href="{{$user->profile->restaurant_url}}">{{$user->profile->restaurant_url}}</a></div>
                 <div class="font-weight-bold"><strong>Open Time：&nbsp;</strong>{{$user->profile->open_time}}</div>
                 <div class="font-weight-bold"><strong>Description：&nbsp;</strong>{{$user->profile->restaurant_info}}</div>
             </div>
