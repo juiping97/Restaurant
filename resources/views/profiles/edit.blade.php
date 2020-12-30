@@ -140,7 +140,7 @@
 
                     <div class="row pt-4"
                          style="font-family: 'Fredoka One', cursive; color: white;">
-                        <button class="btn btn-primary" style="width:120px">Save</button>
+                        <button class="btn btn-primary" style="width:150px">Save</button>
                     </div>
                 </div>
             </div>
